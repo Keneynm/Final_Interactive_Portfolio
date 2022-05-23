@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Yokai</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+           @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+        </style>
+</head>
+
+	<body>
+        <table class="imgpage">
+            <tr>
+                <td>
+                    <div class="smallerspacer">
+                    </div>
+                    <img src="OkuriInu-full.PNG" alt="Okuri Inu(Sending-Off Dog)" class="white">
+                    <div class="smallerspacer">
+                    </div>
+                    <img src="YogenNoTori-full.PNG" alt="Yogen no Tori(Prophecy Bird" class="white">
+                    <div class="smallerspacer">
+                    </div>
+                    <img src="NekoMata-full.PNG" alt="Nekomata(Fork-Tailed Cat)" class="white">
+                </td>
+                <td><p id="colorchanging">
+                    Date: January 2021<br>
+                    Program: Scratch<br>
+                    A set of three drawings made for the same prompt: Yokai, or Japanese Spirits. I interpreted general descriptions of each Yokai and added a seasonal theme for each drawing.<br>
+                    <br>
+                    Fall: A drawing of a Yokai called the Okuri Inu(Sending-Off Dog) who follows lone travelers along dark mountain pathes. It's often accompanied by Yosuzume(Night Sparrows), who fly around the traveler in eerie flocks.<br>
+                    <br>
+                    Winter: A drawing of the Yogen no Tori(Prophecy Bird) who comes to humans to warn them of eminent disasters, especially diseases.<br>
+                    <br>
+                    Summer: A drawing of a Nekomata(Fork Tailed Cat), a Yokai born when a cat reaches a certain grand age and splits its tail into two. These feline spirits often take on human characteristics.
+                </p></td>
+            </tr>
+        </table>
+        <br>
+        
+        <a href="index.html"><button>Home</button></a>
+        <button class="textchange" onclick="changecolor()">Change Text Color</button>
+        <p class ="textcolor" id="textcoloring">whitesmoke</p>
+        
+        <script>
+            var txt = document.getElementById("colorchanging");
+            var txtcolor = document.getElementById("textcoloring");
+            function changecolor(){
+                if (txtcolor.innerHTML == "whitesmoke"){
+                    txt.style.color = "black";
+                    txtcolor.innerHTML = "black";
+                }
+                else if (txtcolor.innerHTML == "black"){
+                    txt.style.color = "whitesmoke";
+                    txtcolor.innerHTML = "whitesmoke";
+                }
+                console.log("ran");
+            };
+        </script>
+
+        <div class="smallerspacer">
+            <p>All coding and artwork by Nanako Keney</p>
+        </div>
+    </body>
+
+</html>
