@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Dragon Girl</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+           @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+        </style>
+</head>
+
+	<body>
+        <table class="imgpage">
+            <tr>
+                <td><img src="coloredakane.jpg" alt="fire dragon girl" class="green"></td>
+                <td><p id="colorchanging">
+                    Date: December 2021<br>
+                    Medium: Colored Pencil, Black Pen<br>
+                    A character whose complex design is meant to mimic that of the game Genshin Impact. Her outfit is based off of the Japanese Hina-Ningyou (Girl's Day Doll) and her gloves, socks, and fans connect to her dragon form.
+                </p></td>
+            </tr>
+        </table>
+        <br>
+        
+        <a href="index.html"><button>Home</button></a>
+        <button class="textchange" onclick="changecolor()">Change Text Color</button>
+        <p class ="textcolor" id="textcoloring">whitesmoke</p>
+        
+        <script>
+            var txt = document.getElementById("colorchanging");
+            var txtcolor = document.getElementById("textcoloring");
+            function changecolor(){
+                if (txtcolor.innerHTML == "whitesmoke"){
+                    txt.style.color = "black";
+                    txtcolor.innerHTML = "black";
+                }
+                else if (txtcolor.innerHTML == "black"){
+                    txt.style.color = "whitesmoke";
+                    txtcolor.innerHTML = "whitesmoke";
+                }
+                console.log("ran");
+            };
+        </script>
+
+        <div class="smallerspacer">
+            <p>All coding and artwork by Nanako Keney</p>
+        </div>
+    </body>
+
+</html>
