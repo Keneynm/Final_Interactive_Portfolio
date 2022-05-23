@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Cat Stickers</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+           @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+        </style>
+</head>
+
+	<body>
+        <table class="imgpage">
+            <tr>
+                <td><img src="catstickers.jpg" alt="Stickers of my two cats" class="green"></td>
+                <td><p id="colorchanging">
+                    Date: April 2021<br>
+                    Program: Adobe Illustrator<br>
+                    Stickers I made by tracing images of my cats. Though these were completely traced, I hand-picked the colors and chose sectioned-off blocks of color rather than blending them out.
+                </p></td>
+            </tr>
+        </table>
+        <br>
+        
+        <a href="index.html"><button>Home</button></a>
+        <button class="textchange" onclick="changecolor()">Change Text Color</button>
+        <p class ="textcolor" id="textcoloring">whitesmoke</p>
+        
+        <script>
+            var txt = document.getElementById("colorchanging");
+            var txtcolor = document.getElementById("textcoloring");
+            function changecolor(){
+                if (txtcolor.innerHTML == "whitesmoke"){
+                    txt.style.color = "black";
+                    txtcolor.innerHTML = "black";
+                }
+                else if (txtcolor.innerHTML == "black"){
+                    txt.style.color = "whitesmoke";
+                    txtcolor.innerHTML = "whitesmoke";
+                }
+                console.log("ran");
+            };
+        </script>
+
+        <div class="smallerspacer">
+            <p>All coding and artwork by Nanako Keney</p>
+        </div>
+    </body>
+
+</html>
