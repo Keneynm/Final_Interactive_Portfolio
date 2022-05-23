@@ -1,0 +1,344 @@
+/*Whole Site Styling*/
+
+/*Smooth-scrolling*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Site background image*/
+body{
+    background-image: url(branchesbg.jpg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Spacer for between site sections*/
+.sectionspacer{
+    height: 350px;
+    background-color: transparent;
+}
+
+/*Smaller spacer for other uses*/
+.smallerspacer{
+    height: 80px;
+    background-color: transparent;
+}
+
+/*Credit line styling*/
+.smallerspacer>p{
+    text-align: center;
+    background-color: rgba(153, 205, 50, 0.5);
+    color: white;
+    font-size: 20px;
+}
+
+/*Button text*/
+a>button{
+    margin-left: 5%;
+    color: dimgrey;
+    font-size: 20px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/*Centered text*/
+.center{
+    text-align: center;
+}
+
+/*Default image height & width*/
+img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*Homepage Title Section Styling*/
+
+/*Gallery image rectangles*/
+div{
+    background-color: rgba(153, 205, 50, 0.5);
+}
+
+/*Outside div for homepage title*/
+.titlepiece{
+    height: 200px;
+    width: 100%;
+}
+
+/*Green div for homepage title*/
+.title{
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+/*Title text*/
+.title>h1{
+    color: rgb(253, 255, 150);
+    text-shadow: 5px 5px rgb(0, 188, 22);
+    font-style: italic;
+    text-align: center;
+    font-size: 140px;
+    font-family:'Cookie', cursive;
+}
+
+/*Artist name text*/
+.title>h3{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+
+/*Homepage Menu Button Styling*/
+
+/*Menu button*/
+.pageselect{
+    margin-left: 6%;
+    margin-top: 3%;
+    width: 10%;
+    border-color: yellow;
+    line-height: 90%;
+}
+
+/*First row farthest left menu button margin*/
+#first{
+    margin-left: 4%;
+}
+
+/*Second row menu buttons*/
+.second{
+    margin-left: 18%;
+    border-color: greenyellow;
+}
+
+
+/*Homepage Gallery Section Styling*/
+
+/*Gallery title*/
+.section{
+    color: whitesmoke;
+    margin-left: 20px;
+    font-size: 70px;
+    font-family: 'Handlee', cursive;
+    font-weight: bolder;
+    text-decoration: underline 5px;
+}
+
+/*Right-aligned gallery titles*/
+.right{
+    text-align: right;
+    margin-right: 20px;
+}
+
+/*Gallery container div styling*/
+.sketches{
+    width: 100%;
+    background-color: transparent;
+}
+
+/*Gallery Image styling*/
+.sketches img{
+    height: 100%;
+    width: 80%;
+    margin: 10%;
+    border: none;
+}
+
+/*Gallery image hover effect*/
+a img:hover{
+    border: solid 5px honeydew;
+}
+
+
+/*Homepage About Section Styling*/
+
+/*About section outer bg color*/
+#clear{
+    background-color: transparent;
+}
+
+/*About section text*/
+#aboutme p{
+    font-size: 30px;
+}
+
+
+/*Homepage Contact Form Styling*/
+
+/*Label styling*/
+label{
+    color: whitesmoke;
+    font-size: 40px;
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+}
+
+/*Space form from edge*/
+form{
+    margin-left: 8%;
+}
+
+/*Space inputs from other inputs*/
+.spaced{
+    margin-left: 8%;
+}
+
+/*Textbar + submit button*/
+input{
+    background-color: whitesmoke;
+    color: dimgray;
+    height: 30px;
+    font-family: 'Patrick Hand', cursive;
+    border: outset 2px rgb(142, 228, 14);
+}
+
+/*Textbar + submit button hover effect*/
+input:hover{
+    border: outset 5px rgb(142, 228, 14);
+}
+
+/*Phone number input*/
+#number{
+    width: 20%;
+}
+
+/*Email input*/
+#email{
+    width: 30%;
+}
+
+/*Message input*/
+#message{
+    width: 60%;
+}
+
+/*Submit button*/
+#submit{
+    width: 70px;
+}
+
+
+/*Induvidual Image Description Page Styling*/
+
+/*Table text*/
+p{
+    color: whitesmoke;
+    margin-left: 3px;
+    font-size: 40px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/*Table data styling*/
+td{
+    width:50%;
+}
+
+/*Green border for image on image description page*/
+.green{
+    border: double 10px rgb(142, 228, 14);
+}
+
+/*White border for image on image description page*/
+.white{
+    border: double 10px whitesmoke;
+}
+
+/*Table styling*/
+table{
+    background-color: rgba(245, 225, 0, 0.6);
+    padding:20px;
+    margin-top:5%;
+    margin-left:5%;
+    margin-right:5%;
+    width:90%;
+}
+
+/*Shrink images for the plate page*/
+#shrink>img{
+    width: 45%;
+    height: 50%;
+}
+
+/*Change text color button*/
+.textchange{
+    margin-left: 74%;
+    font-size: 15px;
+    font-family: 'Patrick Hand', cursive;
+    color: dimgray;
+    line-height: 90%;
+}
+
+/*Induvidual art page buttons*/
+button{
+    background-color: white;
+    height: 45px;
+    width: 100px;
+    border-color: greenyellow;
+    border-width: 3px;
+}
+
+/*Induvidual page button hover effect*/
+button:hover{
+    border-width: 6px;
+}
+
+
+/*Change text color button styling*/
+
+/*Text color label*/
+.textcolor{
+    color: transparent;
+    font-size: 5px;
+}
+
+
+/*Search Results Page Styling*/
+
+/*Year search result page title text*/
+.year{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    background-color: rgba(255, 255, 0, 0.5);
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+/*Search result boxes*/
+.yearspecific{
+    height: 80px;
+    margin-left: 28%;
+    margin-right: 28%;
+    background-color: rgba(255, 255, 223, 0.7);
+}
+
+/*Search result box hover effect*/
+.yearspecific:hover{
+    background-color: rgba(255, 255, 255, 0.95) ;
+}
+
+/*Search result box image border*/
+.yearspecific img{
+    margin: 1%;
+    height: 65px;
+    width: 65px;
+    border: rgb(142, 228, 14) 2px solid;
+}
+
+/*Get rid of search result image hover effect*/
+.yearspecific img:hover{
+    border: rgb(142, 228, 14) 2px solid;
+}
+
+/*Search result box text*/
+.name{
+    color: rgb(142, 228, 14);
+    margin-left: 10px;
+    font-size: 35px;
+    font-family: 'Patrick Hand', cursive;
+}

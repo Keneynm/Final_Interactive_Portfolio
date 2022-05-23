@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Interactive Art Portfolio - Nanako Keney</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Handlee&family=Patrick+Hand&display=swap');
+        </style>
+    </head>
+
+	<body>
+
+        <br id="top"><!--Connects to 'top' button-->
+        <!--Site Title-->
+        <div class="titlepiece">
+            <br>
+            <div class="title">
+                <h1>2018~2022 Art Portfolio</h1>
+                <h3>Artist: Nanako Keney</h3>
+            </div>
+        </div>
+
+        <div class="smallerspacer">
+        </div>
+        <br>
+        <br>
+        <!--Menu Buttons-->
+        <a href="#graph"><button class="pageselect" id="first">Graphite</button></a>
+        <a href="#color"><button class="pageselect">Colored Pencil</button></a>
+        <a href="#paint"><button class="pageselect">Paint</button></a>
+        <a href="#ink"><button class="pageselect">Ink</button></a>
+        <a href="#digit"><button class="pageselect">Digital</button></a>
+        <a href="#anim"><button class="pageselect">Animation</button></a>
+        <a href="#about"><button class="pageselect second">About Me</button></a>
+        <a href="#contact"><button class="pageselect second">Contact</button></a>
+        <!--Prompts user to input a specific year when clicked-->
+        <button class="pageselect second" onclick="search()">Search</button><br>
+     
+        <!--Search Function-->
+        <script>
+            function search(){
+                var year = prompt("Search for art from a specific year:");
+            
+                if(year == "2018"){ //Redirect to page for 2018 art//
+                    window.location.href = "2018art.html";
+                }
+                else if(year == "2019"){ //Redirect to page for 2019 art//
+                    window.location.href = "2019art.html";
+                }
+                else if(year == "2020"){ //Redirect to page for 2020 art//
+                    window.location.href = "2020art.html";
+                }
+                else if(year == "2021"){//Redirect to page for 2021 art//
+                    window.location.href = "2021art.html";
+                }
+                else if(year == "2022"){//Redirect to page for 2022 art//
+                    window.location.href = "2022art.html";
+                }
+                else{//Tell user that I don't have a page for that year//
+                    alert("Guess I haven't added art from this year!");
+                }
+            };
+        </script>
+	
+        
+        <!--Spacer-->
+        <div class="sectionspacer">
+        </div>
+
+        <!--Graphite Art Gallery-->
+        <div class="w3-row-padding sketches">
+            <h2 class="section" id="graph">Graphite</h2><!--Title linked to menu button-->
+            <div class="w3-half"><!--Colored box surrounding image-->
+                <a href="sealion.html"><img src="sealion.jpg" alt="lion-jellyfish-leafy-seadragon chimera"></a><!--Image linked to image description page-->
+            </div>
+            <div class="w3-half">
+                <a href="mountains.html"><img src="sketchmountains.jpg" alt="Mountain landscape"></a>
+            </div>
+            <div class="w3-half">
+                <a href="miko.html"><img src="miko.jpg" alt="Shrine maiden"></a>
+            </div>
+            <div class="w3-half">
+                <a href="coffee.html"><img src="coffeecup.jpg" alt="Coffee cup and spoon"></a>
+            </div>
+            <div class="w3-half">
+                <a href="sayumi.html"><img src="tomori&sayumi.jpg" alt="Two girls, human and demon"></a>
+            </div>
+            <div class="w3-half">
+                <a href="net.html"><img src="NettedDragon.jpg" alt="dragon tangled in net"></a>
+            </div>
+        </div>
+
+        <div class="sectionspacer">
+        </div>
+
+        <!--Colored Pencil Art Gallery-->
+        <div class="w3-row-padding sketches">
+            <h2 class="section right" id="color">Colored Pencil</h2>
+            <div class="w3-half">
+                <a href="endangered.html"><img src="endangered.jpg" alt="Endangered and extinct species"></a>
+            </div>
+            <div class="w3-half">
+                <a href="goldeye.html"><img src="goldcateye.jpg" alt="golden cat eye"></a>
+            </div>
+            <div class="w3-half">
+                <a href="tomori.html"><img src="tomori.jpg" alt="demon slayer girl"></a>
+            </div>
+            <div class="w3-half">
+                <a href="stardragon.html"><img src="dragonofmilkyway.jpg" alt="Star dragon"></a>
+            </div>
+            <div class="w3-half">
+                <a href="dragongirl.html"><img src="coloredakane.jpg" alt="fire dragon girl"></a>
+            </div>
+            <div class="w3-half">
+                <a href="betta.html"><img src="bettafish.jpg" alt="Peach betta fish"></a>
+            </div>
+        </div>
+
+        <div class="sectionspacer">
+        </div>
+
+        <!--Paint Art Gallery-->
+        <div class="w3-row-padding sketches">
+            <h2 class="section" id="paint">Paint</h2>
+            <div class="w3-half">
+                <a href="abstract.html"><img src="abstract.jpg" alt="abstract pathes and objects"></a>
+            </div>
+            <div class="w3-half">
+                <a href="watercat.html"><img src="watercolorcat.jpg" alt="watercolor art of my cat"></a>
+            </div>
+            <div class="w3-half">
+                <a href="plate.html"><img src="platetop.jpg" alt="Plate (top)"></a>
+            </div>
+            <div class="w3-half">
+                <a href="lily.html"><img src="mother'sdaylilies.jpg" alt="Orange lily"></a>
+            </div>
+        </div>
+
+        <div class="sectionspacer">
+        </div>
+
+        <!--Ink Art Gallery-->
+        <div class="w3-row-padding sketches">
+            <h2 class="section right" id="ink">Ink</h2>
+            <div class="w3-half">
+                <a href="bluedragon.html"><img src="bluependragon.jpg" alt="blue dragon"></a>
+            </div>
+        </div>
+
+        <div class="sectionspacer">
+        </div>
+
+        <!--Digital Art Gallery-->
+        <div class="w3-row-padding sketches">
+            <h2 class="section" id="digit">Digital</h2>
+            <div class="w3-half">
+                <a href="neko.html"><img src="Manekineko-full.PNG" alt="Maneki-Nekos(Beckoning Cats)"></a>
+            </div>
+            <div class="w3-half">
+                <a href="queen.html"><img src="Raylen.PNG" alt="A queen"></a>
+            </div>
+            <div class="w3-half">
+                <a href="antihero.html"><img src="antitoxin.PNG" alt="Chemical-controlling girl"></a>
+            </div>
+            <div class="w3-half">
+                <a href="yokai.html"><img src="OkuriInu-full.PNG" alt="Okuri Inu(Sending-Off Dog)"></a>
+            </div>
+            <div class="w3-half">
+                <a href="catstuff.html"><img src="DearData.PNG" alt="Cat stuffed animals"></a>
+            </div>
+            <div class="w3-half">
+                <a href="stickers.html"><img src="catstickers.jpg" alt="Cat Stickers"></a>
+            </div>
+            <div class="w3-half">
+                <a href="fox.html"><img src="10x10.PNG" alt="Swordsman and fox"></a>
+            </div>
+            <div class="w3-half">
+                <a href="branch.html"><img src="branchesbg.jpg" alt="Tree branch and butterflies"></a>
+            </div>
+        </div>
+
+        <div class="sectionspacer">
+        </div>
+
+        <!--Animation Gallery-->
+        <div class="w3-row-padding sketches">
+            <h2 class="section right" id="anim">Animation</h2>
+            <div>
+                <p class="center">~Coming soon~</p>
+            </div>
+        </div>
+
+        <div class="sectionspacer">
+        </div>
+
+        <!--About Me Section-->
+        <div class="w3-row-padding" id="clear">
+            <h2 class="section center" id="about">About Nanako Keney</h2>
+            <table id="aboutme"><!--Table dividing image and text-->
+                <tr>
+                    <td><img src="FanSelfie.jpg" alt="Nanako(2022)" class="green"></td><!--Image of myself-->
+                    <td><!--Description of self-->
+                        <p>I am a high school student whose hobbies include playing the piano, reading, writing, and of course, drawing and animating. Recently, I discovered that I enjoy creating HTML websites as well.</p>
+                        <p>Most of my art skills are self-taguht, but I did attend art lessons for one year at a studio where I learned techniques for drawing with graphite and watercolor. Drawing programs I have used in the past include Krita, Adobe Illustrator, Adobe Photoshop, and Scratch. Although I have experience with drawing realistically, my typical artstyle is a lot closer to Japanese mangas or animes. A lot of my art is also influenced by Japanese culture or mythology.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="sectionspacer">
+        </div>
+
+        <!--Contact Form-->
+        <div class="w3-row-padding">
+            <h2 class="section center" id="contact">Contact Me Here!</h2><!--Contact Section Title-->
+            <form action="https://api.sheetmonkey.io/form/sTNSzF7c8P9zTWsU7QTQCj">
+                <label>Please enter your email and/or phone number along with a brief message.</label><!--Form instruction-->
+                <br>
+                <label>Phone Number: </label>
+                <input type="text" name="textinput" id="number"><!--Space to add phone number-->
+                <label class="spaced">Email: </label>
+                <input type="text" name="textinput" id="email"><!--Space to add email-->
+                <br>
+                <label>Message: </label>
+                <input type="text" name="textinput" id="message"><!--Space to add message-->
+                <input type="submit" class="spaced" id="submit" value="Send"><!--Form submit button-->
+            </form>
+            <div class="smallerspacer">
+            </div>
+        </div>
+        
+        <br>
+        <!--Button connecting to top of page-->
+        <a href="#top"><button class="pageselect">Top</button></a>
+
+        <!--Small credit label-->
+        <div class="smallerspacer">
+            <p>All coding and artwork by Nanako Keney</p>
+        </div>
+
+	</body>
+
+</html>
