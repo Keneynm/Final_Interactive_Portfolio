@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Pastry Plate</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+           @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+        </style>
+</head>
+
+	<body>
+        <table class="imgpage">
+            <tr>
+                <td id="shrink">
+                    <img src="platetopunbaked.jpg" alt="Unbaked plate (top)" class="white">
+                    <img src="platebottomunbaked.jpg" alt="Unbaked plate (bottom)" class="white">
+                    <img src="platetop.jpg" alt="Plate (top)" class="white">
+                    <img src="platebottom.jpg" alt="Plate (bottom)" class="white">
+                </td>
+                <td><p id="colorchanging">
+                    Date: October 2021<br>
+                    Medium: Ceramic Paint<br>
+                    A ceramic plate made at Art's On Fire. Inspired by an image from the internet, I combined animals and pastries or sweets into (hopefully) adorable chibi forms.
+                </p></td>
+            </tr>
+        </table>
+        <br>
+        
+        <a href="index.html"><button>Home</button></a>
+        <button class="textchange" onclick="changecolor()">Change Text Color</button>
+        <p class ="textcolor" id="textcoloring">whitesmoke</p>
+        
+        <script>
+            var txt = document.getElementById("colorchanging");
+            var txtcolor = document.getElementById("textcoloring");s
+            function changecolor(){
+                if (txtcolor.innerHTML == "whitesmoke"){
+                    txt.style.color = "black";
+                    txtcolor.innerHTML = "black";
+                }
+                else if (txtcolor.innerHTML == "black"){
+                    txt.style.color = "whitesmoke";
+                    txtcolor.innerHTML = "whitesmoke";
+                }
+                console.log("ran");
+            };
+        </script>
+
+        <div class="smallerspacer">
+            <p>All coding and artwork by Nanako Keney</p>
+        </div>
+    </body>
+
+</html>
