@@ -225,11 +225,18 @@
                 <br>
                 <label>Message: </label>
                 <input type="text" name="textinput" id="message"><!--Space to add message-->
-                <input type="submit" class="spaced" id="submit" value="Send"><!--Form submit button-->
+                <input type="submit" class="spaced" id="submit" value="Send" onclick="submitted()"><!--Form submit button-->
             </form>
             <div class="smallerspacer">
             </div>
         </div>
+        
+        <!--Message for sucessful submissions-->
+        <script>
+            function submitted(){
+                alert("Form successfully submitted!")
+            }
+        </script>
         
         <br>
         <!--Button connecting to top of page-->
